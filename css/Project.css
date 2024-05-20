@@ -1,0 +1,107 @@
+.details-container1 {
+    padding: 1.5rem;
+    background: #df5617;
+    border-radius: 2rem;
+    border:  0.5rem;
+    text-align: center;
+    margin: auto 50px;
+}
+
+.details-container1 p{
+    color: #fff;
+    font-size: 15px;
+    text-align: right;
+    margin-bottom: 20px;
+}
+.project-img1{
+    width: 350px;
+}
+
+#clock{
+    width: 200px;
+    height: 50vh;
+    position: relative;
+}
+
+#clock p {
+    width: 200px;
+    position: relative;
+    font-size: xx-large;
+}
+
+.set1{
+    position: absolute;
+    width: 79%;
+    height: 50%;
+    top: 770px;
+}
+
+.set1 img {
+    width: 100px;
+}
+
+.set1 div {
+    position: absolute;
+    display: block;
+}
+
+.set1 div:nth-child(1){
+    left: 20%;
+    animation: animat 15s linear infinite;
+}
+.set1 div:nth-child(2){
+    left: 90%;
+    animation: animat 20s linear infinite;
+}
+.set1 div:nth-child(3){
+    left: 70%;
+    animation: animat 25s linear infinite;
+}
+.set1 div:nth-child(4){
+    left: 0%;
+    animation: animat 15s linear infinite;
+}
+.set1 div:nth-child(5){
+    left: 80%;
+    animation: animat 20s linear infinite;
+}
+.set1 div:nth-child(6){
+    left: 10%;
+    animation: animat 25s linear infinite;
+}
+.set1 div:nth-child(7){
+    left: 90%;
+    animation: animat 15s linear infinite;
+
+}
+.set1 div:nth-child(8){
+    left: 40%;
+    animation: animat 20s linear infinite;
+}
+
+@keyframes animat {
+    0%{
+        top: -10%;
+        opacity: 0;
+        transform:  translateX(20px) rotate(0deg);
+    }
+    10%{
+        opacity: 1;
+    }
+    20%{
+        transform: translateX(-20px) rotate(45deg);
+    }
+    40%{
+        transform: translateX(-20px) rotate(90deg);
+    }
+    60%{
+        transform: translateX(20px) rotate(135deg);
+    }
+    80%{
+        transform: translateX(20px) rotate(180deg);
+    }
+    100%{
+        top: 110%;
+        transform: translateX(20px) rotate(225deg);
+    }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: #df5617;
+    }
+    #clock{
+        width: 100%;
+        height: 50vh;
+        position: relative;
+    }
+
+    #clock p {
+        width: 200px;
+        position: relative;
+        font-size: xx-large;
+    }
+    #random{
+        text-align: center;
+    }
+</style>
+<body class="container">
+    <header>
+        <h1 id="random">Random clock</h1>
+    </header>
+
+    <main class="container">
+        <article>
+            <div id="clock">
+                <p id="time"></p>
+
+            </div>
+        </article>
+    <a href="index.html">an</a>
+    </main>
+     <script id="clock.js">
+        const clock = document.getElementById('clock');
+        const text = document.getElementById('time');
+        const h1 = document.getElementById('random')
+
+        const [s,l] = ["40%", "40%"];
+
+        const updateTime= () => {
+            const leftOffset = Math.random()*100
+            const h =Math.random()*360;
+            const currentTime = new Date ();
+            const timeString = currentTime.toLocaleTimeString();
+            text.textContent = timeString;
+            text.setAttribute("style",`top: ${Math.random() *100}%; left: ${leftOffset}%; color:hsl(${h}deg,${s},${l})`)
+            h1.setAttribute("style",`top: ${Math.random() *100}%; left: ${leftOffset}%; color:hsl(${h}deg,${s},${l})`)
+
+        
+        };
+        setInterval(updateTime, 3000)
+     </script>
+</body>
+</html>
